@@ -1,3 +1,4 @@
+import qs from 'qs'
 import axios from 'axios'
 import config from '../config'
 
@@ -8,12 +9,14 @@ const fetch = axios.create({
 
 // request 拦截器
 fetch.interceptors.request.use(
-  options => {
-    if (!options.method) {
-      options.method = 'get'
+  opts => {
+    if (!opts.method) {
+      opts.method = 'get'
+    } else if (opts.method === 'post') {
+      opts.data = qs.stringify(opts.data)
     }
 
-    return options
+    return opts
   },
   error => {
     // Do something with request error

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-// add modules and inject
+// add modules and inject './store/modules/xxx'
 
 import getters from './store/getters'
 
