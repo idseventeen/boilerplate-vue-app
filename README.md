@@ -1,4 +1,4 @@
-# vue-admin-element-ui-for-vue_cli_3.0
+# boilerplate-vue-app
 
 ## Project setup
 ```
