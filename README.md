@@ -2,7 +2,7 @@
 
 ## 初始化
 
-clone 项目模板到本地，删除目录中的 `.git`  目录（模板 git 仓库）
+clone 项目模板到本地，删除目录中的 `.git` 目录（模板 git 仓库）
 
 ```bash
 git clone git@github.com:ishen7/boilerplate-vue-app.git my-project
