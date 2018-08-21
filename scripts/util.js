@@ -8,7 +8,7 @@ exports.getProxyConfig = proxyMap => {
   // 对指定环境配置代理信息
   Object.keys(proxyMap).forEach(key => {
     proxy[`/${key}`] = {
-      target: JSON.parse(proxyMap[key]),
+      target: proxyMap[key],
       changeOrigin: true
     }
   })
